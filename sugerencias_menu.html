@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buzón de sugerencias para el menú</title>
+    <!-- Import Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sugerencias.css">
+</head>
+
+<body>
+    <div class="card-container">
+        <!-- Barra de Cabecera Simulada (Estilo Navegador) -->
+        <header class="browser-header">
+            <div class="logo-stripes">
+                <span class="stripe orange"></span>
+                <span class="stripe green"></span>
+                <span class="stripe red"></span>
+            </div>
+            <div class="header-title">App Web - Proponer Sugerencia</div>
+            <div class="url-badge">URL: /sugerencias/nueva</div>
+        </header>
+
+        <!-- Cuerpo del Formulario -->
+        <main class="card-body">
+            <div class="card-intro">
+                <h1 class="card-title">Buzón de Sugerencias para el Menú</h1>
+                <p class="card-subtitle">
+                    ¿Hay algún plato saludable que te gustaría incluir en las próximas semanas? Envíanos tu propuesta.
+                </p>
+            </div>
+
+            <form action="" class="suggestion-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <label for="nombre-plato">Nombre del Plato</label>
+                    <input type="text" id="nombre-plato" placeholder="Introduce el nombre del plato">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-comida">Tipo de Comida</label>
+                    <div class="select-wrapper">
+                        <select id="tipo-comida">
+                            <option value="almuerzo">Almuerzo / Comida</option>
+                            <option value="desayuno">Desayuno</option>
+                            <option value="cena">Cena</option>
+                            <option value="snack">Snack mañana</option>
+                            <option value="merienda">Merienda</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción / Ingredientes clave</label>
+                    <textarea id="descripcion"
+                        placeholder="Escribe aquí los ingredientes principales o detalles de la preparación..."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-cancel">Cancelar</button>
+                    <button type="submit" class="btn btn-submit">Enviar Sugerencia</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
