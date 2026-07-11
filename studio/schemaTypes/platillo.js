@@ -53,6 +53,30 @@ export default {
       validation: Rule => Rule.required().error('El color es obligatorio.')
     },
     {
+      name: 'calorias',
+      type: 'number',
+      title: 'Calorías (kcal)',
+      validation: Rule => Rule.min(0)
+    },
+    {
+      name: 'proteinas',
+      type: 'number',
+      title: 'Proteínas (g)',
+      validation: Rule => Rule.min(0)
+    },
+    {
+      name: 'carbohidratos',
+      type: 'number',
+      title: 'Carbohidratos (g)',
+      validation: Rule => Rule.min(0)
+    },
+    {
+      name: 'grasas',
+      type: 'number',
+      title: 'Grasas (g)',
+      validation: Rule => Rule.min(0)
+    },
+    {
       name: 'ingredientes',
       type: 'array',
       title: 'Ingredientes',

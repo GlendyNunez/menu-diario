@@ -2,17 +2,16 @@
     display: flex;
     gap: 15px;
     margin: 0 auto;
-    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    margin-top: 40px; 
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
     background: white;
     justify-content: center;
-
-
+    border-radius: 15px;
 
 }
-
-
-
 
 .descripcion {
     width: 50%;
@@ -45,4 +44,10 @@
     border-radius: 4px;
     color: white;
     padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.boton:hover{
+    background: #4e4a4a;
+    padding: 12px;
 }

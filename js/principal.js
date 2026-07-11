@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         const platillos = await obtenerMenuSanity();
-        
+
         if (platillos.length === 0) {
             console.log('Sanity: Base de datos vacía. Cargando platos de demostración.');
             mostrarIndicadorEstado(true);
